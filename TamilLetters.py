@@ -508,7 +508,7 @@ class TamilEluthu():
         #    print("Your input has ", s, " spaces.")
         #print('\nuyir',list_u,'\nmei',list_m,'\nuyirmei',list_um,'\nayutha',list_a,'\nvada',list_v)
         
-        split_eluthu=[
+        return[
             {
                 'eluthu_id':'uyir_eluthu',
                 'eluthu': list_u,
@@ -539,7 +539,5 @@ class TamilEluthu():
 	            
             }
         ]
-
-        return(split_eluthu)
 
     
