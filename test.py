@@ -27,4 +27,14 @@ e=t.TamilEluthu()
 #print(x[::-1])
 
 #e.disp_how_many_Eluthu("நீங்கள் ஆங்கிலம் பேசுகிறீர்களா")
-#x=e.get_how_many_Eluthu_list("நீங்கள் ஆங்கிலம் பேசுகிறீர்களா")
+
+
+x=e.get_how_many_Eluthu_list("நீங்கள் ஆங்கிலம் பேசுகிறீர்களா")
+for i in x:
+    if i['no_of_letters']==0:
+        pass
+    else:
+        print(i['eluthu_id'],i['no_of_letters'],i['eluthu'])
+
+
+

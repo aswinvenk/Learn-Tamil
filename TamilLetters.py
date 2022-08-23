@@ -503,9 +503,43 @@ class TamilEluthu():
             elif(self.sentence[i]=="."):
                 d=d+1
 
-        print("\nuyir eluthu:","\t\t",u,"\nmei eluthu:","\t\t",m,"\nuyirmei eluthu:","\t",um,"\nayutha eluthu:","\t\t",a,"\nvada eluthu:","\t\t",v)
-        if(s>0):
-            print("Your input has ", s, " spaces.")
-        print('\nuyir',list_u,'\nmei',list_m,'\nuyirmei',list_um,'\nayutha',list_a,'\nvada',list_v)
+        #print("\nuyir eluthu:","\t\t",u,"\nmei eluthu:","\t\t",m,"\nuyirmei eluthu:","\t",um,"\nayutha eluthu:","\t\t",a,"\nvada eluthu:","\t\t",v)
+        #if(s>0):
+        #    print("Your input has ", s, " spaces.")
+        #print('\nuyir',list_u,'\nmei',list_m,'\nuyirmei',list_um,'\nayutha',list_a,'\nvada',list_v)
+        
+        split_eluthu=[
+            {
+                'eluthu_id':'uyir_eluthu',
+                'eluthu': list_u,
+                'no_of_letters':u
+	            
+            },
+            {
+                'eluthu_id':'mei_eluthu',
+                'eluthu':list_m,
+                'no_of_letters':m
+	            
+            },
+            {
+                'eluthu_id':'uyirmei_eluthu',
+                'eluthu':list_um,
+                'no_of_letters':um
+            },
+            {
+                'eluthu_id':'ayudha_eluthu',
+                'eluthu':list_a,
+                'no_of_letters':a
+	            
+            },
+            {
+                'eluthu_id':'vada_eluthu',
+                'eluthu':list_v,
+                'no_of_letters':v
+	            
+            }
+        ]
+
+        return(split_eluthu)
 
     
